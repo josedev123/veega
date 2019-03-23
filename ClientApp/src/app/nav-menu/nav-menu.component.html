@@ -17,6 +17,9 @@
                         <span class='glyphicon glyphicon-home'></span> Home
                     </a>
                 </li>
+                <li class="nav-item" [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+                    <a class="nav-link text-dark" [routerLink]='["/vehicles/new"]'>New Vehicle</a>
+                  </li>
                 <li [routerLinkActive]='["link-active"]'>
                     <a [routerLink]='["/counter"]' (click)='collapse()'>
                         <span class='glyphicon glyphicon-education'></span> Counter
